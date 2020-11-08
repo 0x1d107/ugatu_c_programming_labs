@@ -11,7 +11,7 @@ int main(){
     scanf("%lf",&r1);
     printf("Outer radius:");
     scanf("%lf",&r2);
-    if(r1>r2||r1<0||r2<0){
+    if(r1>=r2||r1<=0||r2<=0){
         printf("Wrong radius\n");
         return 0;
     }
