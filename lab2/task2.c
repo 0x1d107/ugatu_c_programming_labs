@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 #define RING_AREA(r1,r2) (M_PI*((r2)*(r2)-(r1)*(r1)))
-double ring_area(r1,r2){
+double ring_area(double r1,double r2){
     return M_PI*(r2*r2-r1*r1);
 }
 int main(){
