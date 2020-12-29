@@ -8,7 +8,7 @@ int main(int argc,char** argv){
     FILE* input = fopen(input_name,"r+");
     size_t line_buf_size=0;
     char* line_buf=NULL;
-    ssize_t line_size=0; 
+    int line_size=0; 
     int lineno = 1;
     int linecount = 1;
     int c;
@@ -19,7 +19,7 @@ int main(int argc,char** argv){
             linecount++;
         c0=c;
 
-        }
+    }
     int*space_array = calloc((linecount+1)/2,sizeof(int));
     rewind(input);
     line_size = getline(&line_buf,&line_buf_size,input);

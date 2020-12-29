@@ -16,12 +16,17 @@ int main(){
     }
     char name[20]={0};
     scanf("%s",name);
+    char found = 0;
     for(int i=0;i<8;i++){
         if(!strcmp(name,BOOK[i].NAME[0])){
             printf("NAME: %s %s\r\n",BOOK[i].NAME[0],BOOK[i].NAME[1]);
             printf("BDAY TIME: %d.%d.%d %d:%d\r\n",BOOK[i].BDAY[0],BOOK[i].BDAY[1],BOOK[i].BDAY[2],
                 BOOK[i].TIME[0],BOOK[i].TIME[1]);
             printf("ZODIAC: %s\r\n", BOOK[i].ZODIAC);
+            found = 1;
         }
+    }
+    if(!found){
+        printf("Not found\r\n");
     }
 }
