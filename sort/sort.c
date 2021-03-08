@@ -90,3 +90,15 @@ void qs(int* array,int first,int last){
 void quick_sort(int* array,int len){
     qs(array,0,len-1);
 }
+int qsort_cmp(const void* a, const void* b){
+    int A = *(const int*)a;
+    int B = *(const int*)b;
+    if(A < B)
+        return -1;
+    if(A > B)
+        return 1;
+    return 0;
+}
+void qsort_sort(int* array,int len){
+    qsort(array,len,sizeof(int),qsort_cmp);
+}

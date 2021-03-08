@@ -12,3 +12,4 @@ double measure_time(sort_t sort,int iterations,int* array, int len);
 void insertion_sort(int*,int);
 void shell_sort(int*,int);
 void quick_sort(int*,int);
+void qsort_sort(int*,int);
