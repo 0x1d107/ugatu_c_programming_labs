@@ -2,6 +2,7 @@
 !*/Makefile
 !*/makefile
 !*/*.c
+!*/*.cpp
 !*/*.h
 !template.odt
 !.gitignore
